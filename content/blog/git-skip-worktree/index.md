@@ -1,7 +1,7 @@
 ---
 title: Git update-index --skip-worktree, and how I used to hate config files
 date: "2016-06-01"
-description: "A use case for managing local changes to config files"
+description: "An update-index use-case for managing local changes to config files."
 ---
 
 While working on a large project with a team, there's always a handful of config files that need to be set up differently on local than on production. Ignoring files works in some cases, but becomes a headache when dealing with config files that need to be tweaked for local or any non-production development. Say hello to:
