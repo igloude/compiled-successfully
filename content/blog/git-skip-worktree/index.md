@@ -10,15 +10,15 @@ While working on a large project with a team, there's always a handful of config
 git update-index <file_name>
 ```
 
-When _update-index_ is told about a file, it clears any _unmerged_ or needs updating state. It won't show up on your git status anymore. If a change is made to the file, it will again be flagged with an _unmerged_ or needs updating state. To make the incognito status more permanent, just add the _skip-worktree_ flag like so:
+When `update-index` is told about a file, it clears any `unmerged` or needs updating state. It won't show up on your git status anymore. If a change is made to the file, it will again be flagged with an `unmerged` or needs updating state. To make the incognito status more permanent, just add the `skip-worktree` flag like so:
 
 ```bash
 git update-index --skip-worktree <file_name>
 ```
 
-When a file is marked as _skip-worktree_, git will read it as if it were up to date. Any changes made and saved to the file will not be flagged as a change. The file will be updated on a pull if the upstream file was changed. Git will output a conflict if both the local and upstream file are changed. This may seem like a negative if you're consistently getting conflicts here, but this is a good thing! If a config file changes upstream, that would mean that you need to change something on your end anyway, consider it a little reminder to update that local config and then re-apply _update-index_.
+When a file is marked as `skip-worktree`, git will read it as if it were up to date. Any changes made and saved to the file will not be flagged as a change. The file will be updated on a pull if the upstream file was changed. Git will output a conflict if both the local and upstream file are changed. This may seem like a negative if you're consistently getting conflicts here, but this is a good thing! If a config file changes upstream, that would mean that you need to change something on your end anyway, consider it a little reminder to update that local config and then re-apply `update-index`.
 
-If/when you need to remove the _update-index_ flag:
+If/when you need to remove the `update-index` flag:
 
 ```bash
 git update-index --no-skip-worktree <file_name>
