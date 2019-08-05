@@ -25,6 +25,7 @@ const Bio = () => {
         siteMetadata {
           author
           social {
+            instagram
             twitter
           }
         }
@@ -54,12 +55,14 @@ const Bio = () => {
         }}
       />
       <p>
-        Written by <strong>{author}</strong> who lives and works in San
-        Francisco building useful things.
+        A blog written by <strong>{author}</strong>, who works on{` `}
+        <a href="https://flipgrid.com/">Flipgrid</a> at Microsoft.
+        <br />
+        You can follow him on{` `}
+        <a href={`https://twitter.com/${social.twitter}`}>Twitter</a>
         {` `}
-        <a href={`https://twitter.com/${social.twitter}`}>
-          You should follow him on Twitter
-        </a>
+        and/or{` `}
+        <a href={`https://instagram.com/${social.instagram}`}>Instagram</a>.
       </p>
     </div>
   )
