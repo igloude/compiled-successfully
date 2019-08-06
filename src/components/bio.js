@@ -56,11 +56,18 @@ const Bio = () => {
       />
       <p>
         A blog written by {author}, who works on{` `}
-        <a href="https://flipgrid.com/">Flipgrid</a> @ Microsoft.
+        <a href="https://flipgrid.com/" title="Flipgrid">
+          Flipgrid
+        </a>{" "}
+        @ Microsoft.
         <br />
-        <a href={`https://twitter.com/${social.twitter}`}>Twitter</a>
+        <a href={`https://twitter.com/${social.twitter}`} title="Twitter">
+          Twitter
+        </a>
         {` `}|{` `}
-        <a href={`https://instagram.com/${social.instagram}`}>Instagram</a>
+        <a href={`https://instagram.com/${social.instagram}`} title="Instagram">
+          Instagram
+        </a>
       </p>
     </div>
   )
