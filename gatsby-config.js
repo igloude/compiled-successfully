@@ -3,7 +3,7 @@ module.exports = {
     title: `Compiled Successfully`,
     author: `Ian Gloude`,
     description: `A blog about web things. My opinions are my own, my code is Stack Overflow\'s.`,
-    siteUrl: `https://gloude.com/`,
+    siteUrl: `https://compiledsuccessfully.dev/`,
     social: {
       twitter: `iangloude`,
       instagram: `iangloude`,
@@ -69,13 +69,8 @@ module.exports = {
     },
     `gatsby-plugin-offline`,
     `gatsby-plugin-react-helmet`,
-    {
-      resolve: `gatsby-plugin-typography`,
-      options: {
-        pathToConfigModule: `src/utils/typography`,
-      },
-    },
     `gatsby-plugin-sass`,
+    `gatsby-plugin-sitemap`,
     // {
     //   resolve: "gatsby-transformer-remark",
     //   options: {
