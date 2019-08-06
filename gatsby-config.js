@@ -76,5 +76,19 @@ module.exports = {
       },
     },
     `gatsby-plugin-sass`,
+    // {
+    //   resolve: "gatsby-transformer-remark",
+    //   options: {
+    //     plugins: [
+    //       {
+    //         resolve: "@weknow/gatsby-remark-codepen",
+    //         options: {
+    //           theme: "dark",
+    //           height: 400,
+    //         },
+    //       },
+    //     ],
+    //   },
+    // },
   ],
 }
