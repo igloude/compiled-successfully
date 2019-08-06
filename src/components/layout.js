@@ -20,6 +20,7 @@ class Layout extends React.Component {
               color: `inherit`,
             }}
             to={`/`}
+            title={title}
           >
             {title}
           </Link>
@@ -34,6 +35,7 @@ class Layout extends React.Component {
               textDecoration: `none`,
             }}
             to={`/`}
+            title={title}
           >
             {title}
           </Link>

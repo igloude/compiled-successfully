@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: `Compiled Successfully`,
+    title: `compiled successfully`,
     author: `Ian Gloude`,
     description: `A blog about web things. My opinions are my own, my code is Stack Overflow\'s.`,
     siteUrl: `https://compiledsuccessfully.dev/`,
