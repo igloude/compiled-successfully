@@ -1,0 +1,7 @@
+=desktop
+  @media screen and (min-width: #{$site-container + ($site-gutter * 2)})
+    @content
+
+=mobile
+  @media screen and (max-width: #{$site-container + ($site-gutter * 2) - .01em})
+    @content

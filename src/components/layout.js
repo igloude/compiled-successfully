@@ -43,14 +43,7 @@ class Layout extends React.Component {
       )
     }
     return (
-      <div
-        style={{
-          marginLeft: `auto`,
-          marginRight: `auto`,
-          maxWidth: rhythm(24),
-          padding: `${rhythm(1.5)} ${rhythm(3 / 4)}`,
-        }}
-      >
+      <main className="container">
         <header>{header}</header>
         <main>{children}</main>
         <footer>
@@ -60,7 +53,7 @@ class Layout extends React.Component {
             Gatsby
           </a>
         </footer>
-      </div>
+      </main>
     )
   }
 }

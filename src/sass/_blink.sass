@@ -1,18 +1,17 @@
-.blink
-  position: relative
++desktop
+  .blink
+    position: relative
 
-  &:after
-    content: ""
-    position: absolute
-    top: 0
-    right: -26px
-    vertical-align: top
-    display: inline-block
-    background-color: $color-code-bg
-    width: 24px
-    height: 100%
-
-    @media screen and (min-width 32em)
+    &:after
+      content: ""
+      position: absolute
+      top: 0
+      right: -26px
+      vertical-align: top
+      display: inline-block
+      background-color: $color-code-bg
+      width: 24px
+      height: 100%
       animation: blink 1.125s step-end infinite
   
 @keyframes blink
