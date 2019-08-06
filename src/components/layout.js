@@ -13,6 +13,7 @@ class Layout extends React.Component {
       header = (
         <h1>
           <Link
+            className="blink"
             style={{
               boxShadow: `none`,
               textDecoration: `none`,
