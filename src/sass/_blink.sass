@@ -11,7 +11,9 @@
     background-color: $color-code-bg
     width: 24px
     height: 100%
-    animation: blink 1.125s step-end infinite
+
+    @media screen and (min-width 32em)
+      animation: blink 1.125s step-end infinite
   
 @keyframes blink
   0% 
