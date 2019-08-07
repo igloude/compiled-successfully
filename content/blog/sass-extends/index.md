@@ -95,4 +95,4 @@ Will result in:
 
 Yikes. Is it even worth the trouble?
 
-The real answer is...maybe? If you're running into selector issues, consider using a mixin instead. But if you totally understand how `@extend` works, and there's a use-case that stands out, great! _Go for it!_ Otherwise its not worth forcing into a stylesheet just for the sake of using it.
+The real answer is...maybe? If you're running into selector issues, consider using a mixin instead. But if you totally understand how `@extend` works, and there's a use-case that stands out, great! _Go for it!_ Otherwise, it may not be worth forcing into a stylesheet just for the sake of using it.
