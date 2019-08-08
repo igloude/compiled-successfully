@@ -1,14 +1,13 @@
 .gatsby-highlight
-  margin-bottom: 1.75rem
+  margin: 0 #{$site-gutter * -1} $site-gutter
   padding: 1em 1.5em
   overflow-x: scroll
-  border-radius: .325em
   font-family: $font-code
   background: $color-code-bg
   color: $color-site-bg
 
   +desktop
-    margin: 0 -1.75rem 1.75rem
+    border-radius: $radius
 
   pre
     margin-top: 0
@@ -20,7 +19,7 @@ code
   p &
     display: inline-block
     padding: .125rem .5rem
-    border-radius: .325em
+    border-radius: $radius
     font-family: $font-code
     background: $color-code-bg
     color: $color-site-bg
