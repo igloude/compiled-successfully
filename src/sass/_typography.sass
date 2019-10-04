@@ -28,5 +28,12 @@ a
   color: $color-link
 
 blockquote
-  border-color: $color-mint
+  $bq-border: 8px
+  margin-left: -$site-gutter
+  padding-left: calc(#{$site-gutter} - #{$bq-border})
+  border-left: $bq-border solid $color-mint
   color: $color-mint
+
+  +desktop
+    margin-left: -$site-gutter;
+    padding-left: calc(#{$site-gutter} - #{$bq-border});
