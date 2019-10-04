@@ -4,7 +4,7 @@ date: "2019-10-04"
 description: "A quick overview on ways to hide content with CSS"
 ---
 
-There are a handful of ways to hide things using CSS, and each of them has its own strengths and potential drawbacks. Here's a list of the 5 most common ways to hide content, and a few use cases for each.
+There are a handful of ways to hide things using CSS, and each of them has its own strengths and potential drawbacks. Here's a list of the 5 most common ways to hide content, and a use case or two for each.
 
 # Display
 
@@ -22,10 +22,8 @@ There are a handful of ways to hide things using CSS, and each of them has its o
 
 Opposite of transparency, `opacity: 1;` is fully opaque, `opacity: 0;` is fully transparent.
 
-- Does not affect the DOM.
+- Does not affect the element's position in the DOM flow, but a common gotcha here is an `opacity` value other than `1` puts the element in a new stacking context.
 - `opacity` applies to the whole element and any descendants, but is not inherited by the element's children.
-
-_Gotcha:_ an `opacity` value other than `1` puts the element in a new stacking context
 
 ## Use Case
 
@@ -36,7 +34,7 @@ _Gotcha:_ an `opacity` value other than `1` puts the element in a new stacking c
 
 `visibility: hidden;`
 
-- Hidden, but still occupies the same space in the document layout.
+- Visually hidden, but still occupies the same space in the visual flow.
 - Unlike the `display` property, `visibility` is animatable. Pairs nicely with a short `opacity` transition when animating an element in.
 
 ## Use Case
@@ -53,12 +51,11 @@ _Gotcha:_ an `opacity` value other than `1` puts the element in a new stacking c
 ## Use Case
 
 - Visual-only elements that already have descriptive text
-- Redundant elements (mobile/desktop menus)
+- Redundant elements (all but one of mobile/tablet/desktop menus)
 
 # Clipping
 
-Hides visually, but not to AT.  
-[A11y guidelines](https://a11y-guidelines.orange.com/web_EN/exemples/masquage/index.html) on this are an excellent description.
+Hides visually, but not to AT. [A11y guidelines](https://a11y-guidelines.orange.com/web_EN/exemples/masquage/index.html) on this are an excellent description.
 
 ## Use Case
 
