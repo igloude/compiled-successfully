@@ -75,7 +75,7 @@ module.exports = {
       resolve: "gatsby-plugin-web-font-loader",
       options: {
         custom: {
-          families: ["Dank Mono"],
+          families: ["Lato, Dank Mono"],
           urls: ["/fonts/fonts.css"],
         },
       },
