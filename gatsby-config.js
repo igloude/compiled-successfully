@@ -71,19 +71,14 @@ module.exports = {
     `gatsby-plugin-react-helmet`,
     `gatsby-plugin-sass`,
     `gatsby-plugin-sitemap`,
-    // {
-    //   resolve: "gatsby-transformer-remark",
-    //   options: {
-    //     plugins: [
-    //       {
-    //         resolve: "@weknow/gatsby-remark-codepen",
-    //         options: {
-    //           theme: "dark",
-    //           height: 400,
-    //         },
-    //       },
-    //     ],
-    //   },
-    // },
+    {
+      resolve: "gatsby-plugin-web-font-loader",
+      options: {
+        custom: {
+          families: ["Dank Mono"],
+          urls: ["/fonts/fonts.css"],
+        },
+      },
+    },
   ],
 }
