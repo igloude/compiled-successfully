@@ -1,9 +1,11 @@
 @font-face {
   font-family: "Lato";
+  font-display: fallback;
   src: url("Lato-Regular.ttf");
 }
 
 @font-face {
   font-family: "Dank Mono";
+  font-display: fallback;
   src: url("DankMono-Regular.otf");
 }
